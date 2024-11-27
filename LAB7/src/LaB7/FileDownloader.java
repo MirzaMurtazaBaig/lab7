@@ -1,7 +1,7 @@
 package LaB7;
 public class FileDownloader {
     private static final int TOTAL_FILES = 10;
-    private String[] fileNames = {"File1", "File2", "File3", "File4", "File5"};
+    private String[] fileNames = {"File1"};
 
     public static void main(String[] args) {
         FileDownloader downloader = new FileDownloader();
