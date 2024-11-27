@@ -1,6 +1,6 @@
 package LaB7;
 public class FileDownloader {
-    private static final int TOTAL_FILES = 5;
+    private static final int TOTAL_FILES = 10;
     private String[] fileNames = {"File1", "File2", "File3", "File4", "File5"};
 
     public static void main(String[] args) {
@@ -9,7 +9,7 @@ public class FileDownloader {
     }
 
     public void startDownload() {
-        for (int i = 0; i < TOTAL_FILES; i++) {
+        for (int i = 5; i < TOTAL_FILES; i++) {
             Runnable downloadTask = createDownloadTask(fileNames[i]);
             Runnable logTask = createLogTask(fileNames[i]);
 
